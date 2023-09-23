@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Authentication</title>
+</head>
+<body>
+    <!-- Signup Page -->
+    <div class="main" id="signup-page">
+        <p>Welcome back.<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWNTc2OUbqPlrCB51Mm80m3VrJNPEV_lh0uVd0jEwUFIUrAkbi2r-YhSB73AHO0YsOV_Q&usqp=CAU"></p>
+        <h3>Sign up to your account</h3>
+
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="signup-name" required></br>
+  
+        <label for="email"> Your Email</label>
+        <input type="email" name="email" id="signup-email" required></br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="signup-password" required><br>
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" name="confirm-password" id="signup-confirm-password" required>
+
+        <button type="button" class="registerbtn" id="continue-btn">CONTINUE</button>
+        <div id="signup-error-message" class="error-message" style="display:none;">Error: All fields are mandatory!</div>
+        <p id="footer">Don't have an account? <a href="">Sign up</a></p>
+    </div>
+
+
+  <div class="background">
+    <div class="page" id="profile-page">
+        <div id="signup-success-message" class="success-message" style="display: none;">Signup Successful!</div>
+        <h3>Profile</h3>
+        <img src="upper.png">
+        <div id="lower"></div>
+        <img src="lower part.png">
+        <div id="profile-details">
+            <p>Full Name: <span id="profile-name"></span></p>
+            <p>Email: <span id="profile-email"></span></p>
+            <p>Password: <span id="profile-password"></span></p>
+        </div>
+        <button id="logout-btn">Logout</button>
+       
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
